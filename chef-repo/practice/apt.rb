@@ -4,7 +4,7 @@ apt_package "Installing gitttt" do
 end
 
 apt_package "install apache" do
-	action :install
+	action :remove
 	package_name "apache2"
 	notifies :install, "apt_package[Installing gitttt]"
 end
